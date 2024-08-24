@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <title>Formulario</title>
+</head>
+<body>
+    <section class="section first">
+        <h1>Sign Up To</h1>
+        <h2>Lorem Isum is Simple</h2>
+        <br><br>
+        <h5 class="create">If you already have an account</h5>
+        <h5 class="create">You can <a href="Login">Login here</a></h5>
+        <img src="img/Saly-14.png" class="imagen">
+    </section>
+    <section class="section formulario1">
+    <form id="formulario">
+        <h1>Datos</h1> <br>
+        <article class="container">
+
+            <div class="formulario_grupo " id="grupo_nombre">
+                <label class="formulario_label" for="Nombre">Nombre:</label>
+                <div class="formulario_grupo_input">
+                     <input type="text" class="formulario_input" id="Nombre" name="Nombre" >
+                </div>
+                <p class="formulario_input_error">No debe estar vacío y debe tener al menos 2 caracteres.</p>
+            </div>
+
+            <div class="formulario_grupo" id="grupo_correo">
+                <label class="formulario_label" for="Correo">Correo:</label>
+                <div class="formulario_grupo_input">
+                     <input type="email" class="formulario_input" id="Correo" name="Correo" >
+                </div>
+                <p class="formulario_input_error">Debe tener un formato válido (ejemplo: usuario@dominio.com).</p>
+            </div>
+
+        </article>
+
+        <article class="container">
+            
+            <div class="formulario_grupo" id="grupo_telefono">
+                <label class="formulario_label" for="Telefono">Telefono:</label>
+                <div class="formulario_grupo_input">
+                     <input type="tel" class="formulario_input" id="Telefono" name="Telefono" >
+                </div>
+                <p class="formulario_input_error"> Debe ser un número válido y opcionalmente, puedes validar el formato para un país específico.</p>
+            </div>
+
+            <div class="formulario_grupo" id="grupo_Password">
+                <label class="formulario_label" for="Password">Contraseña:</label>
+                <div class="formulario_grupo_input">
+                     <input type="password" class="formulario_input" id="Password" name="Password" >
+                </div>
+                <p class="formulario_input_error"> Debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número.</p>
+            </div>
+
+            </article>
+            <article class="container">
+            <div class="formulario_grupo" id="grupo_Password2">
+                <label class="formulario_label" for="Password2">Confirmar Contraseña:</label>
+                <div class="formulario_grupo_input">
+                     <input type="password" class="formulario_input" id="Password2" name="Password2" >
+                </div>
+                <p class="formulario_input_error" id="Password2"> Debe coincidir con la contraseña.</p>
+            </div>
+
+            <div class="formulario_grupo" id="grupo_fecha">
+                <label class="formulario_label" for="Fecha">Fecha de Nacimiento:</label>
+                <div class="formulario_grupo_input">
+                     <input type="date" class="formulario_input" id="Fecha" name="Fecha" >
+                </div>
+                <p class="formulario_input_error">La fecha debe ser una fecha válida y el usuario debe tener al menos 18 años.</p>
+            </div>
+
+        </article>
+        <article class="container">
+            <br>
+            <div class="formulario_grupo genere" id="grupo_genero">
+                <label class="formulario_label" for="Genero">Género:</label>
+                <div class="Genero-options">
+                    <div class="Genero-option">
+                        <input type="radio" id="male" name="Genero" value="male" >
+                        <label for="male">Masculino</label>
+                    </div>
+                    <div class="Genero-option">
+                        <input type="radio" id="female" name="Genero" value="female">
+                        <label for="female">Femenino</label>
+                    </div>
+                    <div class="Genero-option">
+                        <input type="radio" id="other" name="Genero" value="other">
+                        <label for="other">Otro</label>
+                    </div>
+                </div>
+                <p class="formulario_input_error">Debe seleccionar una opción</p>
+            </div>
+            
+            <div class="formulario_grupo termino" id="grupo_terminos">
+                <label class="formulario_label" for="Terminos">
+                    <input class="formulario_checkbox" type="checkbox" id="Terminos" name="Terminos" >
+                    Acepto Terminos y condiciones
+                </label>
+
+                <div class="formulario_mensaje" id="formulario_mensaje">
+                <p class="formulario_input_error">Debe estar marcado para poder enviar el formulario.</p>
+                </div><br><br><br>
+
+            </div>
+        </article>
+        <div class="formulario_grupo formulario_grupo_btn_enviar">
+            <button type="submit" class="formulario_btn">Enviar</button>
+        </div>
+
+    </form>
+    </section>
+    <script src="formulario.js"></script>
+</body>
+</html>
